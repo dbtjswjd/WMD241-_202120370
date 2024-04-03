@@ -17,17 +17,11 @@
         margin-top: 0;
         margin-bottom: 0;
       }
-      * {
-        box-sizing: border-box
-      }
-      div::before{
-        display: block;
-        margin: 0;
 
-      }
-      div::after {
+      *div::before,
+      *div::after {
         box-sizing: border-box;
-        font-family: "Spoqa Han Sans Neo","sans-serif";
+        font-family: 'Spoqa Han Sans Neo', sans-serif;
         margin: 0;
         padding: 0;
       }
@@ -35,7 +29,6 @@
       body {
         background-color: #928f89;
         margin: 0;
-
 
       }
 
@@ -53,6 +46,7 @@
       }
 
       .callout {
+        border-radius: 7px;
         background-color: #dcccad;
         padding: 16px;
       }
@@ -60,6 +54,24 @@
       .stage {
         padding-top: 8px;
         padding-bottom: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: auto;
+        height: 100%;
+        text-align: left;
+      }
+
+      td {
+        width: auto;
+        padding-inline: 10px;
+        padding-block: 4px;
+      }
+
+      .line {
+        border-bottom: 1px solid #928f89;
+        width: auto;
       }
     </style>
   </head>
@@ -131,35 +143,35 @@
           <p>4인분기준</p>
         </div>
         <table>
-          <tr>
+          <tr class="line">
             <td>수량</td>
             <td>단위</td>
             <td>품목</td>
           </tr>
           <tr>
-            <td>3</td>
+            <td style="text-align: center">3</td>
             <td>Tbsp.</td>
             <td>코셔 소금</td>
           </tr>
           <tr>
-            <td>4</td>
+            <td style="text-align: center">4</td>
             <td>oz.</td>
             <td>
               관찰레(염장 돼지볼살) 혹은 판체타(이탈리안 베이컨) 혹은 베이컨
             </td>
           </tr>
           <tr>
-            <td>2</td>
+            <td style="text-align: center">2</td>
             <td>oz.</td>
             <td>파르마지아노 레지아노 혹은 페코리노 로마노</td>
           </tr>
           <tr>
-            <td>4</td>
+            <td style="text-align: center">4</td>
             <td></td>
             <td>대란 노른자</td>
           </tr>
           <tr>
-            <td>2</td>
+            <td style="text-align: center">2</td>
             <td></td>
             <td>대란</td>
           </tr>
@@ -169,12 +181,12 @@
             <td>막 간 후추</td>
           </tr>
           <tr>
-            <td>2</td>
+            <td style="text-align: center">2</td>
             <td>Tbsp.</td>
             <td>엑스트라 버진 올리브 오일</td>
           </tr>
           <tr>
-            <td>1</td>
+            <td style="text-align: center">1</td>
             <td>lb.</td>
             <td>스파게티 혹은 부카티니 혹은 리가토니</td>
           </tr>
@@ -197,7 +209,7 @@
           물이 끓기 전에 다른 준비를 해주세요.
           <em style="font-style: normal">관찰레 4oz.</em>
           를 약 1x¼" 정도 크기로 잘라주세요.
-          <em>치즈 2oz.</em>
+          <em style="font-style: normal">치즈 2oz.</em>
           를 곱게 갈아서 ¼ 분량은 나중을 위해 따로 떼어두세요.
         </p>
       </div>
@@ -270,7 +282,14 @@
           치즈가루로 꾸며주세요.
         </p>
       </div>
-      <div style="background-color: #dcccad; padding: 8px">
+      <div
+        style="
+          border-radius: 7px;
+          background-color: #dcccad;
+          padding: 15px;
+          font-size: small;
+        "
+      >
         <p>
           편집자의 참고 사항: 이 레시피는 원래 2018년 1월호에 게재되었습니다. 더
           많은 최고의 파스타 레시피를 확인하려면 여기를 참조하세요.
