@@ -1,0 +1,13 @@
+.card {
+  max-width: 37.5rem;
+  padding: 1.5rem;
+  background-color: aqua;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
