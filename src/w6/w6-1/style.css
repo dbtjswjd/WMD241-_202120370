@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: aquamarine;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.container {
+  background-color: bisque;
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.children {
+  display: flex;
+}
