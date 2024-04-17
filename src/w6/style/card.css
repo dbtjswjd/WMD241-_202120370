@@ -1,3 +1,6 @@
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
+
 * {
   box-sizing: border-box;
 }
@@ -10,3 +13,34 @@
 img {
   max-width: 100%;
 }
+
+.card__top {
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  /* margin; 16px*/
+}
+
+.card__bottom {
+  padding: 1rem;
+}
+
+.card__p {
+  margin-top: 2rem;
+}
+
+.card__title {
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.card__subtitle {
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.card__bottom .card__title {
+  font-weight: 400;
+}
+
