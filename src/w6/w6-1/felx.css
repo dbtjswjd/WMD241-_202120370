@@ -20,8 +20,7 @@ body {
 }
 
 .children {
-  border: 1px rgba(231, 10, 10, 0);
-  display: flex;
+  border: 1px solid red;
   padding: 1rem;
 }
 
