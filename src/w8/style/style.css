@@ -26,6 +26,14 @@ body {
   font-weight: 500;
 }
 
+.navigation--type--top {
+  border-bottom: 2px solid #eee;
+}
+
+.navigation--type--bottom {
+  font-size: 1rem;
+}
+
 .navigation > .navigation__menu-group {
   display: flex;
   gap: 2.5rem;
