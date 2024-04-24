@@ -158,10 +158,10 @@ img {
 
 .explain {
   padding-inline: 1.875rem;
-  padding-top: 500px;
+  padding-top: 28rem;
   background-color: #fff;
   margin-bottom: 50px;
-  display: flex;
+  justify-content: space-evenly;
 }
 /*
   .explain__wraper {
