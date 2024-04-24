@@ -149,11 +149,11 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 120px;
   height: auto;
-  object-fit: cover;
   margin-right: 30px;
   display: block;
+  float: left;
 }
 
 .explain {
@@ -161,19 +161,34 @@ img {
   padding-top: 600px;
   background-color: #fff;
   margin-inline: 8.5186rem;
-}
-
-.section__explain-1
-  .section__explain-2
-  .section__explain-3
-  .section__explain-4
-  .section__explain-5
-  .section__explain-6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.section explain {
+.section__explain {
   margin-bottom: 20px;
+  column-gap: 0.75rem;
+  row-gap: 1.5rem;
+}
+
+h4 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.explain__text1,
+.explain__text4,
+.explain__text5,
+.explain__text6 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.explain__more {
+  color: #4c5fd5;
+  font-size: 20px;
+  font-weight: 400;
 }
