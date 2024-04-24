@@ -9,22 +9,19 @@ body {
   color: #191a1b;
   font-family: "Aktiv Grotesk", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.875rem;
-  max-width: 90rem;
-  max-height: 61.25rem/;
 }
 
 .container {
+  max-width: 150rem;
   margin-inline: auto;
+  margin-block: auto;
   background-color: #585858;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  margin: 0px 68px 19px 30px;
+  margin-inline: auto;
   justify-content: space-between;
   flex-wrap: wrap;
   /* 마지막에 지워도 되게끔 처리하기 */
@@ -62,12 +59,8 @@ body {
   display: flex;
   align-items: center;
   margin-block: 0;
-  padding-left: 0;
+  padding-inline: 30px;
   list-style-type: none;
-}
-
-.navigation__menu-group-left {
-  align-items: flex-start;
 }
 
 .navigation__l {
@@ -76,12 +69,16 @@ body {
   padding-top: 5px;
 }
 
-.navigation__menu-group-right < * {
+.navigation__Submit .navigation__sign-in {
+  display: inline-block;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .navigation__Submit {
   border: 0.0625rem solid #fff;
-  padding: 15px 12px;
+  padding: 10px 15px;
   border-radius: 7%;
   color: #fff;
   line-height: 1;
@@ -90,17 +87,8 @@ body {
 .navigation__sign-in {
   border: 0.0625rem;
   background-color: #4c5fd5;
-  padding: 13px 25px;
+  padding: 10px 15px;
   border-radius: 7%;
+  color: #fff;
   line-height: 1;
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 200;
-}
-
-.navigation__Submit .navigation__sign-in {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  box-sizing: border-box;
 }
