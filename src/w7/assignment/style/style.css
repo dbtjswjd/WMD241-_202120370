@@ -161,6 +161,7 @@ img {
   padding-top: 500px;
   background-color: #fff;
   margin-bottom: 50px;
+  display: flex;
 }
 /*
   .explain__wraper {
