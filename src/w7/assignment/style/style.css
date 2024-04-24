@@ -149,7 +149,7 @@ body {
 }
 
 img {
-  max-width: 120px;
+  max-width: 90px;
   height: auto;
   margin-right: 30px;
   display: block;
@@ -161,15 +161,12 @@ img {
   padding-top: 600px;
   background-color: #fff;
   margin-inline: 8.5186rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.section__explain {
-  margin-bottom: 20px;
-  column-gap: 0.75rem;
-  row-gap: 1.5rem;
+.explain__wraper {
+  flex-basis: 20%;
+  flex: none;
+  flex-direction: column;
 }
 
 h4 {
@@ -178,17 +175,70 @@ h4 {
   font-size: 24px;
   font-weight: 700;
 }
-
-.explain__text1,
-.explain__text4,
-.explain__text5,
-.explain__text6 {
-  margin-bottom: 20px;
-  font-size: 24px;
+.section__explain-1 {
+  position: absolute;
+  left: 210px;
+  top: 580px;
 }
+
+.section__explain-2 {
+  position: absolute;
+  right: 160px;
+  top: 580px;
+}
+
+.section__explain-3 {
+  position: absolute;
+  left: 210px;
+  top: 750px;
+}
+
+.section__explain-4 {
+  position: absolute;
+  right: 490px;
+  top: 750px;
+}
+
+.section__explain-5 {
+  position: absolute;
+  left: 210px;
+  top: 920px;
+}
+
+.section__explain-6 {
+  position: absolute;
+  right: 620px;
+  top: 920px;
+}
+
+.section__explain-1,
+.section__explain-2,
+.section__explain-3,
+.section__explain-4,
+.section__explain-5,
+.section__explain-6 {
+  max-width: 40%;
+}
+
+/*
+  
+  .explain__text1,
+  .explain__text4,
+  .explain__text5,
+  .explain__text6 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    float: right;
+  }
+*/
 
 .explain__more {
   color: #4c5fd5;
   font-size: 20px;
   font-weight: 400;
+}
+
+.text__wraper {
+  float: right;
+  max-width: 23px;
 }
