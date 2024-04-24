@@ -147,7 +147,9 @@ body {
   font-weight: 600;
   color: #9f9898;
 }
-
+.container__gap {
+  gap: 10px 10px 10px;
+}
 img {
   max-width: 5.625rem;
   height: auto;
