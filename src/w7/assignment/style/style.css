@@ -13,7 +13,7 @@ body {
 
 .container {
   margin-inline: auto;
-  background-color: #585858;
+  background-color: #ffffff;
   max-width: 150rem;
 }
 
@@ -117,7 +117,7 @@ body {
   background-color: #fff;
   color: #000000;
   position: absolute;
-  top: calc(50%);
+  top: calc(58%);
   left: 50%;
   transform: translateX(-50%);
 
@@ -130,10 +130,27 @@ body {
 }
 
 .research__arrow {
-  max-width: 28px;
-  vertical-align: middle;
-  margin-right: 600px;
+  position: absolute;
+  top: calc(28%);
+  right: 3%;
+  font-weight: 100;
+  font-size: 25px;
 }
 
 .research__bar-text .research__arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.research__bar-text {
+  font-weight: 600;
+  color: #9f9898;
+}
+
+.explain {
+  padding-inline: 30px;
+  padding-top: 600px;
+  background-color: #fff;
+  margin-inline: 8.5186rem;
 }
