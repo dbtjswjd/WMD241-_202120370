@@ -4,105 +4,103 @@
 
 body {
   margin: 0;
-  min-height: 100%;
-  /*색 바꾸야함 container 의 컬러 지우고 그거 가져오기*/
-  background-color: aquamarine;
-  color: #4c525a;
-  font-family: "Proximanova opt", sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 400;
   display: block;
-  /* max-width: 100%; */
+  background-color: #191a1b;
+  color: #191a1b;
+  font-family: "Aktiv Grotesk", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  max-width: 90rem;
+  max-height: 61.25rem/;
 }
 
 .container {
   margin-inline: auto;
-  background-color: #fff;
+  background-color: #585858;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .navigation {
   display: flex;
+  align-items: center;
+  margin: 0px 68px 19px 30px;
   justify-content: space-between;
-  padding-block: 1.25rem;
-  padding-inline: 2.5rem;
-  font-weight: 500;
-  margin-right: ;
+  flex-wrap: wrap;
+  /* 마지막에 지워도 되게끔 처리하기 */
+  background-color: #191a1b;
+  color: #fff;
+  line-height: 60px;
+  padding-inline: 30px;
 }
 
-.navigation > .navigation__menu-group {
+.navigation__logo {
+  /* >width: 3.75rem; */
+  height: 1.75rem;
+  aspect-ratio: 60 / 22;
+  margin: 0;
+}
+
+.navigation__logo > svg {
   display: flex;
-  gap: 2.5rem;
+  width: 150px;
+  height: 100%;
+}
+
+.navigation__Abstract {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/*.navigation__padding {
+  padding-inline-start: 30px;
+} */
+
+.navigation > .navigation__menu-group {
+  gap: 13px;
+  display: flex;
   align-items: center;
   margin-block: 0;
   padding-left: 0;
   list-style-type: none;
 }
 
-.navigation > .navigation__menu-group-left {
-  gap: 40px;
-}
-
-.navigation__menu-group {
-  font-size: 1.0625rem;
-  display: flex;
-  line-height: 15px;
-  justify-content: flex-end;
-}
-
 .navigation__menu-group-left {
-  padding-inline: 0.5rem;
-  padding-block: 1rem;
-  margin: auto;
-  font-size: 1.125rem;
-  font-weight: 370;
+  align-items: flex-start;
 }
 
-.navigation__menu-group-right {
-  font-weight: 800;
-  font-size: 0.875rem;
+.navigation__l {
+  font-size: 40px;
+  font-weight: 100;
+  padding-top: 5px;
 }
 
-.navigation__menu-group-right > * {
-  padding-inline: 0.5rem;
-  padding-block: 1rem;
-  margin-left: 1.0625rem;
+.navigation__menu-group-right < * {
 }
 
-.navigatino-child-opt-1 {
-  flex-shrink: 0;
-  flex-grow: 2;
-  justify-content: ;
-}
-
-.navigation--logo {
-  float: left;
-  margin-inline: 1.25rem;
-}
-
-img {
-  max-width: 100%;
-  float: left;
-  width: 9.3125rem;
-  height: 2rem;
-  position: relative;
-  top: 0.75rem;
-  bottom: -0.75rem;
-  margin-inline: 1.25rem;
-  margin-block: 0.875rem;
-}
-
-.navigation__box {
-  border: 0.0625rem solid #00b289;
-  padding: 0.75rem 1.5625rem 0.5625rem;
+.navigation__Submit {
+  border: 0.0625rem solid #fff;
+  padding: 15px 12px;
   border-radius: 7%;
-  color: #00b289;
+  color: #fff;
+  line-height: 1;
 }
 
-.navigation__box2 {
+.navigation__sign-in {
   border: 0.0625rem;
-  background-color: #00b289;
-  padding: 0.75rem 1.6875rem 0.5625rem;
+  background-color: #4c5fd5;
+  padding: 13px 25px;
   border-radius: 7%;
+  line-height: 1;
   color: #ffffff;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.navigation__Submit .navigation__sign-in {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
 }

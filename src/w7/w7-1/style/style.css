@@ -55,6 +55,7 @@ body {
   /* >width: 3.75rem; */
   height: 1.75rem;
   aspect-ratio: 45 / 21;
+  float: left;
 }
 
 .navigation__logo > svg {
