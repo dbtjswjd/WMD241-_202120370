@@ -12,10 +12,9 @@ body {
 }
 
 .container {
-  max-width: 150rem;
   margin-inline: auto;
-  margin-block: auto;
   background-color: #585858;
+  max-width: 150rem;
 }
 
 .navigation {
@@ -70,10 +69,6 @@ body {
 }
 
 .navigation__Submit .navigation__sign-in {
-  display: inline-block;
-  box-sizing: border-box;
-  flex-grow: 1;
-  flex-basis: 0;
 }
 
 .navigation__Submit {
@@ -87,8 +82,58 @@ body {
 .navigation__sign-in {
   border: 0.0625rem;
   background-color: #4c5fd5;
-  padding: 10px 15px;
+  padding: 10px 22px;
   border-radius: 7%;
   color: #fff;
   line-height: 1;
+}
+
+.research {
+  position: relative;
+  background-color: #dadbf1;
+  padding: 80px 30px 115px;
+  display: block;
+  line-height: 32px;
+  width: 100%;
+  height: 430px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.research__text {
+  margin-bottom: 16px;
+  font-size: 88px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.research__bar {
+  border: 1px solid black;
+  width: 720px;
+  height: 66px;
+  padding: 16px;
+  background-color: #fff;
+  color: #000000;
+  position: absolute;
+  top: calc(50%);
+  left: 50%;
+  transform: translateX(-50%);
+
+  /*
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%); */
+
+  box-shadow: 0px 4px 6px #959595;
+}
+
+.research__arrow {
+  max-width: 28px;
+  vertical-align: middle;
+  margin-right: 600px;
+}
+
+.research__bar-text .research__arrow {
 }
