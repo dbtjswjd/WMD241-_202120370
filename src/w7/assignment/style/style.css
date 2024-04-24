@@ -158,9 +158,9 @@ img {
 
 .explain {
   padding-inline: 1.875rem;
-  padding-top: 37.5rem;
+  padding-top: 500px;
   background-color: #fff;
-  margin-bottom: 3.125rem;
+  margin-bottom: 50px;
 }
 /*
   .explain__wraper {
@@ -180,13 +180,17 @@ h4 {
   margin-top: 48px;
 }
 
+.explain__more {
+}
+
 .section__explain-1,
 .section__explain-2,
 .section__explain-3,
 .section__explain-4,
 .section__explain-5,
 .section__explain-6 {
-  max-width: 40%;
+  align-items: stretchc;
+  justify-content: space-evenly;
 }
 
 /*
