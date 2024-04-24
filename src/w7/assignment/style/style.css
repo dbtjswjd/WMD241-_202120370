@@ -167,6 +167,9 @@ img {
   flex-basis: 20%;
   flex: none;
   flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h4 {
@@ -174,41 +177,6 @@ h4 {
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: 700;
-}
-.section__explain-1 {
-  position: absolute;
-  left: 210px;
-  top: 580px;
-}
-
-.section__explain-2 {
-  position: absolute;
-  right: 160px;
-  top: 580px;
-}
-
-.section__explain-3 {
-  position: absolute;
-  left: 210px;
-  top: 750px;
-}
-
-.section__explain-4 {
-  position: absolute;
-  right: 490px;
-  top: 750px;
-}
-
-.section__explain-5 {
-  position: absolute;
-  left: 210px;
-  top: 920px;
-}
-
-.section__explain-6 {
-  position: absolute;
-  right: 620px;
-  top: 920px;
 }
 
 .section__explain-1,
@@ -241,4 +209,37 @@ h4 {
 .text__wraper {
   float: right;
   max-width: 23px;
+}
+
+.container__menu-group-type-bottom {
+  background-color: #000000;
+  color: #fff;
+  padding-inline: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 24px;
+}
+
+h3 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.container__menu-group-type-bottom-site {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu-group-email {
+  float: inline-end;
+}
+
+.container__menu-group-type-bottom-last-logo {
+  margin-top: 170px;
+  margin-inline-end: 90px;
+  max-width: 180px;
 }
