@@ -40,6 +40,25 @@ img {
   background-color: oklch(1 0 0);
   border: 1px solid oklch(0.5 0 0);
   border-radius: 0.75rem;
+  .section--opt-pos-rel & {
+    position: relative;
+    &: nth-chid(1) {
+      left: 1rem;
+    }
+    position: relative;
+    &: nth-chid(2) {
+      left: 2rem;
+      top: -50%;
+    }
+    position: relative;
+    &: nth-chid(3) {
+      left: 3rem;
+    }
+    position: relative;
+    &: nth-chid(4) {
+      left: 4rem;
+    }
+  }
   &:nth-child(1) {
     margin-top: 0;
   }
