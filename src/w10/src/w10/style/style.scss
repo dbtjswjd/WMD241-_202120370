@@ -1,9 +1,7 @@
 //*::after
 //*::before { *만 했을때 안 되는 경우가 있어서
 
-*::after {
-  box-sizing: border-box;
-}
+*::after,
 *::before {
   box-sizing: border-box;
 }
@@ -49,13 +47,19 @@ body {
   &--opt-1 {
     grid-template-columns: 1fr 1fr 1fr; // e.g 0.5fr 1fr 2fr = 1 : 2 : 4
     //grid-template-rows: 1fr 1fr 1fr 1fr; // 단점 : 설정한 줄을 넘을시 레이아웃이 이상해 질 수 있음
-    grid-auto-rows: 1fr; //하나만 넣어주면
+    grid-auto-rows: 1fr;
     column-gap: 0.75rem;
     row-gap: 1.5rem;
   }
   &--opt-2 {
     //grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    //grid-template-columns: repeat(
+    //3,
+    //minmax(100px, 1fr)
+    //); // 한 쪽에 최솟값/다른 한 쪽 최댓값 -> min은 명시적인 값을 매김
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr; //minmax하면 안되는이유 각각 늘어날때 세로는 일부로 커지지 않는 성격(같은 비례를 같기 위해)
     column-gap: 0.75rem;
     row-gap: 1.5rem;
   }
