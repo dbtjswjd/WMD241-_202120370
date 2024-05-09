@@ -1,0 +1,62 @@
+//*::after
+//*::before { *만 했을때 안 되는 경우가 있어서
+
+*::after {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.section {
+  padding-block: 1.5rem;
+}
+
+.section > h2 {
+  max-width: 60rem;
+  margin-inline: auto;
+  margin-block: 0;
+  padding-inline: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.container {
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  background-color: oklch(0.95 0.01 240);
+}
+
+.grid {
+  display: grid;
+
+  &__item {
+    &--nth {
+      @for $i from 1 through 12 {
+        &-#{$i} {
+          background-color: oklch(0.9 0.05 $i * 30);
+        }
+      }
+    }
+  }
+
+  &--opt-1 {
+    grid-template-columns: 1fr 1fr 1fr; // e.g 0.5fr 1fr 2fr = 1 : 2 : 4
+    //grid-template-rows: 1fr 1fr 1fr 1fr; // 단점 : 설정한 줄을 넘을시 레이아웃이 이상해 질 수 있음
+    grid-auto-rows: 1fr; //하나만 넣어주면
+    column-gap: 0.75rem;
+    row-gap: 1.5rem;
+  }
+  &--opt-2 {
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.75rem;
+    row-gap: 1.5rem;
+  }
+}
