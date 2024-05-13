@@ -1,6 +1,3 @@
-//*::after
-//*::before { *만 했을때 안 되는 경우가 있어서
-
 *::after,
 *::before {
   box-sizing: border-box;
@@ -33,34 +30,54 @@ body {
 
 .grid {
   display: grid;
-
-  &__item {
-    &--nth {
-      @for $i from 1 through 12 {
-        &-#{$i} {
-          background-color: oklch(0.9 0.05 $i * 30);
-        }
-      }
-    }
-  }
-
-  &--opt-1 {
-    grid-template-columns: 1fr 1fr 1fr; // e.g 0.5fr 1fr 2fr = 1 : 2 : 4
-    //grid-template-rows: 1fr 1fr 1fr 1fr; // 단점 : 설정한 줄을 넘을시 레이아웃이 이상해 질 수 있음
-    grid-auto-rows: 1fr;
-    column-gap: 0.75rem;
-    row-gap: 1.5rem;
-  }
-  &--opt-2 {
-    //grid-template-columns: repeat(3, 1fr);
-    // grid-template-columns: repeat(2, 1fr);
-    //grid-template-columns: repeat(
-    //3,
-    //minmax(100px, 1fr)
-    //); // 한 쪽에 최솟값/다른 한 쪽 최댓값 -> min은 명시적인 값을 매김
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 1fr; //minmax하면 안되는이유 각각 늘어날때 세로는 일부로 커지지 않는 성격(같은 비례를 같기 위해)
-    column-gap: 0.75rem;
-    row-gap: 1.5rem;
-  }
+}
+.grid__item--nth-1 {
+  background-color: oklch(0.9 0.05 30);
+}
+.grid__item--nth-2 {
+  background-color: oklch(0.9 0.05 60);
+}
+.grid__item--nth-3 {
+  background-color: oklch(0.9 0.05 90);
+}
+.grid__item--nth-4 {
+  background-color: oklch(0.9 0.05 120);
+}
+.grid__item--nth-5 {
+  background-color: oklch(0.9 0.05 150);
+}
+.grid__item--nth-6 {
+  background-color: oklch(0.9 0.05 180);
+}
+.grid__item--nth-7 {
+  background-color: oklch(0.9 0.05 210);
+}
+.grid__item--nth-8 {
+  background-color: oklch(0.9 0.05 240);
+}
+.grid__item--nth-9 {
+  background-color: oklch(0.9 0.05 270);
+}
+.grid__item--nth-10 {
+  background-color: oklch(0.9 0.05 300);
+}
+.grid__item--nth-11 {
+  background-color: oklch(0.9 0.05 330);
+}
+.grid__item--nth-12 {
+  background-color: oklch(0.9 0.05 360);
+}
+.grid--opt-1 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  -moz-column-gap: 0.75rem;
+  column-gap: 0.75rem;
+  row-gap: 1.5rem;
+}
+.grid--opt-2 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  -moz-column-gap: 0.75rem;
+  column-gap: 0.75rem;
+  row-gap: 1.5rem;
 }

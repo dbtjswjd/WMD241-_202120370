@@ -13,7 +13,7 @@ body {
 .container {
   display: grid;
   -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
   row-gap: 1.5rem;
   grid-template-columns: 12.5rem repeat(auto-fit, minmax(240px, 1fr));
   max-width: 80rem;
