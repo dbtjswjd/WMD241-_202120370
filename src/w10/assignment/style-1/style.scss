@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap");
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -6,18 +10,24 @@
 :root {
   --navigation-color: #f6f6eb;
   --navigation-logo-text-color: #381fd1;
+  --downbar-background-color: #10284b;
 }
 
 //html {
 //  scroll-behavior: smooth;
-//  scroll-padding-block-start: 2rem;
+//  scroll-padding-block-start: 32px;
 //}
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: FamiljenGrotesk, HankenGrotesk, sans-serif;
+  font-size: 16px;
   //overflow: initial;
   //overflow-y: initial;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -28,17 +38,29 @@ body {
 
 ol {
   list-style: none;
+  padding: 0;
+}
+
+h1 {
+  margin-block: 0;
 }
 
 .navigation {
+  height: 32px;
   display: flex;
+  // row-gap: -x -0.25rem;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 16px;
   background-color: var(--navigation-color);
+  font-family: HanKenGrotesk;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.25rem;
+  letter-spacing: 1.1008px;
 
   &--logo {
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
     padding: 0;
   }
   &--left {
@@ -49,24 +71,173 @@ ol {
   }
   &--btn-fill {
     color: #fff;
-    font-size: 14px;
-    line-height: 2rem;
-    border-radius: 0.5rem;
-    padding: 0.125rem;
+    font-size: 0.875rem;
+    border-radius: 7px;
+    border-width: 2px;
+    padding-inline: 8px;
+    padding-block: 5px;
     border: solid #fff;
     background-color: var(--navigation-logo-text-color);
+    border-color: transparent;
+  }
+  &--span {
+    justify-content: center;
+    column-gap: 110px;
   }
 }
 
+// .navigation--left .navigation--login {
+//   column-gap: 1rem;
+// }
+
 .navigation > .navigation__menu-group {
   display: flex;
-  margin-block: 0.3125rem;
+  margin-block: 5px;
   justify-content: center;
-  padding-inline: 3rem;
-  column-gap: 1rem;
+  padding-inline: 48px;
+  column-gap: 2rem;
   align-items: center;
 }
 
-.navigation__menu-group .navigation__menu-group-right {
-  column-gap: 1rem;
+// .navigation__menu-group .navigation__menu-group-right {
+//   column-gap: 16px;
+// }
+
+.category {
+  // background-color: darkgray; //그리두 후 수정
+  min-width: 280px;
+  width: 280px;
+
+  &--search-libary {
+    line-height: 5px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    color: #4b4b4e;
+  }
+  &--search-bar {
+    border: 2px solid #acacaf;
+    border-radius: 4px;
+    min-height: 2.4rem;
+    width: 100%;
+  }
+  &--home {
+    font-weight: 600;
+    line-height: 1.7rem;
+  }
+}
+
+.categoty-flex {
+}
+
+.catagory-container {
+  padding-top: 4rem;
+  padding-inline: 4rem;
+}
+
+.title {
+  background-color: #c7aaaa; //그리두 후 수정
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  align-items: center;
+
+  &--name {
+    font-weight: 1000;
+    line-height: 1.1rem;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: -0.1rem;
+  }
+  &--view {
+    // align-items: center;
+    color: var(--navigation-logo-text-color);
+    font-family: RobotoMono, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 140%;
+  }
+}
+
+.subtitle {
+  background-color: darkgray; //그리두 후 수정
+}
+
+.card1 {
+  background-color: #c7aaaa; //그리두 후 수정
+  &--pic {
+    max-width: 2.5rem;
+  }
+}
+
+.card2 {
+  background-color: darkgray; //그리두 후 수정
+  &--pic {
+    max-width: 2.5rem;
+  }
+}
+
+.card3 {
+  background-color: #c7aaaa; //그리두 후 수정
+  &--pic {
+    max-width: 2.5rem;
+  }
+}
+
+.card4 {
+  background-color: darkgray; //그리두 후 수정
+  &--pic {
+    max-width: 2.5rem;
+  }
+}
+
+.card5 {
+  background-color: #c7aaaa; //그리두 후 수정
+  &--pic {
+    max-width: 2.5rem;
+  }
+}
+
+.card6 {
+  background-color: darkgray; //그리두 후 수정
+  &--pic {
+    max-width: 2.5rem;
+  }
+}
+
+.title2 {
+  background-color: darkgray; //그리두 후 수정
+}
+
+.subtitle2 {
+  background-color: #c7aaaa; //그리두 후 수정
+}
+
+.card2-1 {
+  background-color: darkgray; //그리두 후 수정
+  &--pic {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.card2-2 {
+  background-color: #c7aaaa; //그리두 후 수정
+  &--pic {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.card2-3 {
+  background-color: darkgray; //그리두 후 수정
+  &--pic {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.downbar {
+  background-color: var(--downbar-background-color);
 }
