@@ -127,7 +127,7 @@ h2 {
   // grid-template-columns: repeat(3);
   // grid-template-rows: repeat(3);
   // grid-gap: 10px; /* 그리드 아이템 간의 간격 설정 */
-  column-gap: 2rem;
+  column-gap: 3rem;
 }
 
 .main-grid {
@@ -155,7 +155,7 @@ h2 {
   width: 17.5rem;
   &--search-libary {
     line-height: 0.3125rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.96px;
     color: #4b4b4e;
@@ -800,6 +800,7 @@ h2 {
 .downbar__downside {
   display: flex;
   justify-content: space-between;
+  font-size: 0.875rem;
 }
 
 .downbar__downside-pic {
@@ -833,7 +834,7 @@ h2 {
 }
 
 .downbar__downside-text {
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.18rem;
   font-weight: 700;
   line-height: 1.4;
   font-family: RobotoMono, sans-serif;
