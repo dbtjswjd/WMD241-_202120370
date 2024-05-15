@@ -232,8 +232,8 @@ h2 {
   grid-gap: 32px; /* 그리드 아이템 간의 간격 설정 */
   grid-auto-columns: 1fr 1fr 1fr;
   grid-column: 1;
-  grid-row: 1/-1;
-  overflow-wrap: break-word;
+  grid-row: 1;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
 
   // row-gap: 32px;
 }
@@ -340,7 +340,7 @@ h2 {
 }
 
 .card3 {
-  grid-column: 3 / 3;
+  grid-column: 3;
   grid-row: 1;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
