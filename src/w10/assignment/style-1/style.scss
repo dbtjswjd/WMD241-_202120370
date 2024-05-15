@@ -13,21 +13,23 @@
   --downbar-background-color: #10284b;
   --sidebar-category-text-color: #4b4b4e;
   --sidebar-category-card-text-color: #10284b;
-  --card1-padding-inline: 1.5rem;
-  --card1-padding-top: 1.5rem;
-  --card1-padding-bottom: 2.5rem;
+  --card1-padding-inline: 24px;
+  --card1-padding-top: 24px;
+  --card1-padding-bottom: 40px;
 }
 
 //html {
 //  scroll-behavior: smooth;
-//  scroll-padding-block-start: 32px;
+//  scroll-padding-block-start: 2rem;
 //}
 
 body {
   margin: 0;
   font-family: FamiljenGrotesk, HankenGrotesk, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #10284b;
+
+  max-width: 100vw;
 
   //overflow: initial;
   //overflow-y: initial;
@@ -39,9 +41,8 @@ img {
 
 .container {
   height: auto;
-  max-width: 100vw;
   margin-inline: auto;
-  padding-inline: 1.5rem;
+
   // justify-content: center; 가운데 정렬 시켜줄만한거 확인 필요
 }
 
@@ -56,21 +57,23 @@ h2 {
 }
 
 .navigation {
-  height: 32px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  height: 2rem;
   display: flex;
-  // row-gap: -x -0.25rem;
+  // row-gap: -x -4px;
   justify-content: space-between;
-  padding: 16px;
+  padding: 1rem;
   background-color: var(--navigation-color);
   font-family: HanKenGrotesk;
   font-weight: 900;
-  font-size: 15px;
-  line-height: 0.625rem;
-  letter-spacing: 1.1008px;
+  font-size: 0.9375rem;
+  line-height: 10px;
+  letter-spacing: 0.0688rem;
 
   &--logo {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     padding: 0;
   }
   &--left {
@@ -81,368 +84,490 @@ h2 {
   }
   &--btn-fill {
     color: #fff;
-    font-size: 0.875rem;
-    border-radius: 7px;
-    border-width: 2px;
-    padding-inline: 8px;
-    padding-block: 5px;
+    font-size: 14px;
+    border-radius: 0.4375rem;
+    border-width: 0.125rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.3125rem;
     border: solid #fff;
     background-color: var(--navigation-logo-text-color);
     border-color: transparent;
   }
   &--span {
     justify-content: center;
-    column-gap: 110px;
+    column-gap: 6.875rem;
   }
 }
 
 // .navigation--left .navigation--login {
-//   column-gap: .625rem;
+//   column-gap: 10px;
 // }
 
 .navigation > .navigation__menu-group {
   display: flex;
-  margin-block: 5px;
+  margin-block: 0.3125rem;
   justify-content: center;
-  padding-inline: 48px;
-  column-gap: 2rem;
+  padding-inline: 3rem;
+  column-gap: 32px;
   align-items: center;
 }
 
 // .navigation__menu-group .navigation__menu-group-right {
-//   column-gap: 16px;
+//   column-gap: 1rem;
 // }
 
+.grid {
+  margin-top: 64px;
+  justify-content: center;
+  // grid-template-columns: 12.5rem repeat(auto-fit, minmax(240px, 1fr));
+  margin-inline: auto;
+  padding-inline: 24px;
+  // justify-content: center;
+  display: grid;
+  // grid-template-columns: repeat(3);
+  // grid-template-rows: repeat(3);
+  // grid-gap: 10px; /* 그리드 아이템 간의 간격 설정 */
+  column-gap: 2rem;
+}
+
+.main-grid {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.main-grid2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
 .catagory-container {
-  margin-top: 4rem;
+  // grid-column: 1;
+  // grid-row: 1;
+  margin-top: 64px;
+  //   display: grid;
+  //   grid-column: 1;
+  //   grid-row: 1 / -1;
 }
 
 .category {
   // background-color: darkgray; //그리두 후 수정
-  min-width: 280px;
-  width: 280px;
+  min-width: 17.5rem;
+  width: 17.5rem;
   &--search-libary {
-    line-height: 5px;
-    margin-bottom: 12px;
+    line-height: 0.3125rem;
+    margin-bottom: 0.75rem;
     font-weight: 400;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.96px;
     color: #4b4b4e;
   }
   &--search-bar {
-    border: 2px solid #acacaf;
-    border-radius: 4px;
-    min-height: 2.4rem;
+    border: 0.125rem solid #acacaf;
+    border-radius: 0.25rem;
+    min-height: 38.4px;
     width: 100%;
   }
   &--home {
     color: #381fd1;
-    padding: 16px 0 16px 0.625rem;
+    padding: 1rem 0 1rem 10px;
   }
   &--collections {
     color: var(--sidebar-category-text-color);
-    padding: 16px 0 16px 0.625rem;
+    padding: 1rem 0 1rem 10px;
   }
   &--catagories {
     color: var(--sidebar-category-text-color);
-    margin-bottom: 8px;
-    padding: 16px 0 16px 0.625rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0 1rem 10px;
   }
 }
 
 // navigation > .navigation__menu-group {
 
 .category-margine-mid {
-  // padding: 16px 0 16px 0.625rem;
+  // padding: 1rem 0 1rem 10px;
   line-height: 1.7;
   font-weight: 600;
 }
 
 .category--contribute-card {
-  padding: 1.5rem;
-  margin-top: 1.4rem;
+  padding: 24px;
+  margin-top: 22.4px;
   background-color: #f3f2fc;
-  border-radius: 0.5rem;
+  border-radius: 8px;
 
   &--contribute-card-title {
     color: var(--sidebar-category-card-text-color);
     line-height: 1.1;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 900;
   }
   &--contribute-card-text {
     line-height: 1.7;
     color: var(--sidebar-category-card-text-color);
-    margin-top: 8px;
-    margin-bottom: 24px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   &--contribute-card-btn {
-    padding-inline: 1rem;
-    padding-block: 12px;
+    padding-inline: 16px;
+    padding-block: 0.75rem;
     text-align: center;
     align-items: center;
     background-color: var(--navigation-logo-text-color);
     color: #fff;
-    border-radius: 8px;
+    border-radius: 0.5rem;
   }
 }
 
+.grid-2 {
+  display: grid;
+  // grid-template-columns: repeat(3 100px);
+  // grid-template-rows: repeat(4 100px);
+  grid-gap: 32px; /* 그리드 아이템 간의 간격 설정 */
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-column: 1;
+  grid-row: 1/-1;
+  overflow-wrap: break-word;
+
+  // row-gap: 32px;
+}
+
 .title {
-  background-color: #c7aaaa; //그리두 후 수정
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   align-items: center;
 
   &--name {
     font-weight: 1000;
-    line-height: 1.625rem;
-    font-size: 3rem;
+    line-height: 1;
+    font-size: 48px;
     margin: 0;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.8px;
   }
   &--view {
-    // align-items: center;
     color: var(--navigation-logo-text-color);
     font-family: RobotoMono, sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.07rem;
-    line-height: 2;
+    font-size: 17.6px;
+    letter-spacing: 1.12px;
     text-decoration: underline;
+    white-space: nowrap;
   }
 }
 
 .subtitle {
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
+  margin-bottom: 24px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
-// .card-grid {
-//   display: grid;
-// }
+.card-grid {
+  display: grid;
+}
 
 .card1 {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: subgrid;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  // overflow: hidden;
 
   &--pic {
-    max-width: 2.5rem;
-    height: 40px;
-    border: 1px solid #cbcbcd;
-    border-radius: 0.5rem;
+    max-width: 40px;
+    height: 2.5rem;
+    border: 0.0625rem solid #cbcbcd;
+    border-radius: 8px;
   }
   &--sub-t {
     color: var(--navigation-logo-text-color);
-    letter-spacing: 0.08rem;
+    letter-spacing: 1.28px;
     font-weight: 700;
     line-height: 1.4;
     font-family: RobotoMono, sans-serif;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   &--main-t {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1.1;
   }
 }
 
 .card2 {
+  grid-column: 2;
+  grid-row: 1;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
 
   &--pic {
-    max-width: 2.5rem;
-    height: 40px;
-    border: 1px solid #cbcbcd;
-    border-radius: 0.5rem;
+    max-width: 40px;
+    height: 2.5rem;
+    border: 0.0625rem solid #cbcbcd;
+    border-radius: 8px;
   }
   &--sub-t {
     color: var(--navigation-logo-text-color);
-    letter-spacing: 0.08rem;
+    letter-spacing: 1.28px;
     font-weight: 700;
     line-height: 1.4;
     font-family: RobotoMono, sans-serif;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   &--main-t {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1.1;
   }
 }
 
 .card3 {
+  grid-column: 3 / 3;
+  grid-row: 1;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
 
   &--pic {
-    max-width: 2.5rem;
-    height: 40px;
-    border: 1px solid #cbcbcd;
-    border-radius: 0.5rem;
+    max-width: 40px;
+    height: 2.5rem;
+    border: 0.0625rem solid #cbcbcd;
+    border-radius: 8px;
   }
   &--sub-t {
     color: var(--navigation-logo-text-color);
-    letter-spacing: 0.08rem;
+    letter-spacing: 1.28px;
     font-weight: 700;
     line-height: 1.4;
     font-family: RobotoMono, sans-serif;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   &--main-t {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1.1;
   }
 }
 
 .card4 {
+  grid-column: 3 / 1;
+  grid-row: 2;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
 
   &--pic {
-    max-width: 2.5rem;
-    height: 40px;
-    border: 1px solid #cbcbcd;
-    border-radius: 0.5rem;
+    max-width: 40px;
+    height: 2.5rem;
+    border: 0.0625rem solid #cbcbcd;
+    border-radius: 8px;
   }
   &--sub-t {
     color: var(--navigation-logo-text-color);
-    letter-spacing: 0.08rem;
+    letter-spacing: 1.28px;
     font-weight: 700;
     line-height: 1.4;
     font-family: RobotoMono, sans-serif;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   &--main-t {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1.1;
   }
 }
 
 .card5 {
+  grid-column: 3 / 2;
+  grid-row: 2;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
 
   &--pic {
-    max-width: 2.5rem;
-    height: 40px;
-    border: 1px solid #cbcbcd;
-    border-radius: 0.5rem;
+    max-width: 40px;
+    height: 2.5rem;
+    border: 0.0625rem solid #cbcbcd;
+    border-radius: 8px;
   }
   &--sub-t {
     color: var(--navigation-logo-text-color);
-    letter-spacing: 0.08rem;
+    letter-spacing: 1.28px;
     font-weight: 700;
     line-height: 1.4;
     font-family: RobotoMono, sans-serif;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   &--main-t {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1.1;
   }
 }
 
 .card6 {
+  grid-column: 3 / 3;
+  grid-row: 2;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
 
   &--pic {
-    max-width: 2.5rem;
-    height: 40px;
-    border: 1px solid #cbcbcd;
-    border-radius: 0.5rem;
+    max-width: 40px;
+    height: 2.5rem;
+    border: 0.0625rem solid #cbcbcd;
+    border-radius: 8px;
   }
   &--sub-t {
     color: var(--navigation-logo-text-color);
-    letter-spacing: 0.08rem;
+    letter-spacing: 1.28px;
     font-weight: 700;
     line-height: 1.4;
     font-family: RobotoMono, sans-serif;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   &--main-t {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1.1;
   }
 }
 
 .title2 {
-  background-color: #c7aaaa; //그리두 후 수정
+  margin-top: 64px;
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   align-items: center;
 
   &--name {
     font-weight: 1000;
-    line-height: 1.625rem;
-    font-size: 3rem;
+    line-height: 1;
+    font-size: 48px;
     margin: 0;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.8px;
   }
   &--view {
     // align-items: center;
     color: var(--navigation-logo-text-color);
     font-family: RobotoMono, sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.07rem;
-    line-height: 2;
+    font-size: 17.6px;
+    letter-spacing: 1.12px;
     text-decoration: underline;
+    white-space: nowrap;
   }
 }
 
 .subtitle2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
+  grid-column: 2;
+  grid-row: 3;
+  margin-bottom: 24px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
+.card_2 {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .card2-1 {
-  background-color: darkgray; //그리두 후 수정
+  grid-column: 1;
+  grid-row: 1;
+  // padding: 32px;
+  position: relative;
+  display: inline-block;
+  max-width: 16rem;
+  padding-top: 1rem;
+  background-color: #f6f6eb;
+
   &--pic {
+    // position: absolute;
     height: auto;
     max-width: 100%;
+    min-width: 16rem;
+  }
+  &--main-t {
+    // position: relative;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: HankenGrotesk, sans-serif;
+    line-height: 1.1;
+    position: absolute;
+    top: 22%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    padding: 0.625rem;
+    // border-radius: 0.3125rem;
   }
 }
 
 .card2-2 {
-  background-color: #c7aaaa; //그리두 후 수정
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  background-color: #f3f2fc;
+  border-radius: 0.35rem;
+  // padding-block: 32px;
+  padding-top: 1.6rem;
+  max-width: 16rem;
+
   &--pic {
     height: auto;
     max-width: 100%;
   }
+  &--main-t {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: HankenGrotesk, sans-serif;
+    line-height: 1.1;
+    left: 12%;
+    top: -10px;
+  }
 }
 
 .card2-3 {
-  background-color: darkgray; //그리두 후 수정
+  grid-column: 3;
+  grid-row: 1;
+  // overflow-x: hidden;
+  display: inline-block;
+  position: relative;
+  background-color: #f6f6eb;
+  border-radius: 0.35rem;
+  padding-top: 1.6rem;
+  max-width: 16rem;
+
   &--pic {
     height: auto;
     max-width: 100%;
+  }
+  &--main-t {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: HankenGrotesk, sans-serif;
+    line-height: 1.1;
+    left: 12%;
+    top: -10px;
   }
 }
 
