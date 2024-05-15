@@ -494,6 +494,7 @@ h2 {
 .card2-2--pic {
   height: auto;
   max-width: 100%;
+  min-width: 16rem;
 }
 .card2-2--main-t {
   font-size: 1.5rem;
@@ -517,6 +518,7 @@ h2 {
 .card2-3--pic {
   height: auto;
   max-width: 100%;
+  min-width: 16rem;
 }
 .card2-3--main-t {
   font-size: 1.5rem;
