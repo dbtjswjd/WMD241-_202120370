@@ -515,6 +515,265 @@ h2 {
   top: -10px;
 }
 
+.downbar-flex {
+  display: flex;
+  justify-content: center;
+  background-color: var(--downbar-background-color);
+  margin-top: 6rem;
+}
+
 .downbar {
   background-color: var(--downbar-background-color);
+  color: #f6f6eb;
+  padding-inline: 1.5rem;
+  margin-top: 6rem;
+  margin-inline: 90px;
+}
+
+.downbar__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.downbar__card1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 0.5rem;
+}
+.downbar__card1--card1-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card1--card1-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card1--card1-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card1--card1-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card1--card1-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__card2 {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 0.5rem;
+}
+.downbar__card2--card2-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card2--card2-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card2--card2-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card2--card2-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card2--card2-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__card3 {
+  grid-column: 3;
+  grid-row: 1;
+  margin-bottom: 0.5rem;
+}
+.downbar__card3--card3-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card3--card3-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card3--card3-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card3--card3-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card3--card3-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card3--card3-name6 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__card4 {
+  grid-column: 4;
+  grid-row: 1;
+  margin-bottom: 0.5rem;
+}
+.downbar__card4--card4-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card4--card4-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card4--card4-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card4--card4-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card4--card4-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__card5 {
+  margin-bottom: 0.5rem;
+}
+.downbar__card5--card5-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card5--card5-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card5--card5-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card5--card5-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card5--card5-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__card6 {
+  margin-bottom: 0.5rem;
+}
+.downbar__card6--card6-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card6--card6-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card6--card6-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card6--card6-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card6--card6-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__card7 {
+  margin-bottom: 0.5rem;
+}
+.downbar__card7--card7-name1 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+.downbar__card7--card7-name2 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card7--card7-name3 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card7--card7-name4 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card7--card7-name5 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+.downbar__card7--card7-name6 {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.downbar__downside {
+  display: flex;
+  justify-content: space-between;
+}
+
+.downbar__downside-pic {
+  display: flex;
+  gap: 0.75rem;
+}
+.downbar__downside-pic--pic1 {
+  width: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+.downbar__downside-pic--pic2 {
+  width: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+.downbar__downside-pic--pic3 {
+  width: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+.downbar__downside-pic--pic4 {
+  width: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+.downbar__downside-pic--pic5 {
+  width: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.downbar__downside-text {
+  letter-spacing: 0.08rem;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: RobotoMono, sans-serif;
+  color: #fedb63;
 }
