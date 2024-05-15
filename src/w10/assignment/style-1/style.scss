@@ -13,6 +13,9 @@
   --downbar-background-color: #10284b;
   --sidebar-category-text-color: #4b4b4e;
   --sidebar-category-card-text-color: #10284b;
+  --card1-padding-inline: 1.5rem;
+  --card1-padding-top: 1.5rem;
+  --card1-padding-bottom: 2.5rem;
 }
 
 //html {
@@ -24,6 +27,8 @@ body {
   margin: 0;
   font-family: FamiljenGrotesk, HankenGrotesk, sans-serif;
   font-size: 16px;
+  color: #10284b;
+
   //overflow: initial;
   //overflow-y: initial;
 }
@@ -45,6 +50,7 @@ ol {
   padding: 0;
 }
 
+h1,
 h2 {
   margin-block: 0;
 }
@@ -147,7 +153,7 @@ h2 {
 
 .category-margine-mid {
   // padding: 16px 0 16px 0.625rem;
-  line-height: 1.7rem;
+  line-height: 1.7;
   font-weight: 600;
 }
 
@@ -159,12 +165,12 @@ h2 {
 
   &--contribute-card-title {
     color: var(--sidebar-category-card-text-color);
-    line-height: 1.1rem;
+    line-height: 1.1;
     font-size: 1.5rem;
     font-weight: 900;
   }
   &--contribute-card-text {
-    line-height: 1.7rem;
+    line-height: 1.7;
     color: var(--sidebar-category-card-text-color);
     margin-top: 8px;
     margin-bottom: 24px;
@@ -192,71 +198,228 @@ h2 {
     line-height: 1.625rem;
     font-size: 3rem;
     margin: 0;
-    letter-spacing: -0.625rem;
+    letter-spacing: 0.05rem;
   }
   &--view {
     // align-items: center;
     color: var(--navigation-logo-text-color);
     font-family: RobotoMono, sans-serif;
     font-weight: 700;
-    font-size: 0.625rem;
+    font-size: 1.1rem;
     letter-spacing: 0.07rem;
-    line-height: 140%;
+    line-height: 2;
+    text-decoration: underline;
   }
 }
 
 .subtitle {
-  background-color: darkgray; //그리두 후 수정
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
+// .card-grid {
+//   display: grid;
+// }
+
 .card1 {
-  background-color: #c7aaaa; //그리두 후 수정
+  padding-inline: var(--card1-padding-inline);
+  padding-top: var(--card1-padding-top);
+  padding-bottom: var(--card1-padding-bottom);
+
   &--pic {
     max-width: 2.5rem;
+    height: 40px;
+    border: 1px solid #cbcbcd;
+    border-radius: 0.5rem;
+  }
+  &--sub-t {
+    color: var(--navigation-logo-text-color);
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: RobotoMono, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &--main-t {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
 .card2 {
-  background-color: darkgray; //그리두 후 수정
+  padding-inline: var(--card1-padding-inline);
+  padding-top: var(--card1-padding-top);
+  padding-bottom: var(--card1-padding-bottom);
+
   &--pic {
     max-width: 2.5rem;
+    height: 40px;
+    border: 1px solid #cbcbcd;
+    border-radius: 0.5rem;
+  }
+  &--sub-t {
+    color: var(--navigation-logo-text-color);
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: RobotoMono, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &--main-t {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
 .card3 {
-  background-color: #c7aaaa; //그리두 후 수정
+  padding-inline: var(--card1-padding-inline);
+  padding-top: var(--card1-padding-top);
+  padding-bottom: var(--card1-padding-bottom);
+
   &--pic {
     max-width: 2.5rem;
+    height: 40px;
+    border: 1px solid #cbcbcd;
+    border-radius: 0.5rem;
+  }
+  &--sub-t {
+    color: var(--navigation-logo-text-color);
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: RobotoMono, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &--main-t {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
 .card4 {
-  background-color: darkgray; //그리두 후 수정
+  padding-inline: var(--card1-padding-inline);
+  padding-top: var(--card1-padding-top);
+  padding-bottom: var(--card1-padding-bottom);
+
   &--pic {
     max-width: 2.5rem;
+    height: 40px;
+    border: 1px solid #cbcbcd;
+    border-radius: 0.5rem;
+  }
+  &--sub-t {
+    color: var(--navigation-logo-text-color);
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: RobotoMono, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &--main-t {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
 .card5 {
-  background-color: #c7aaaa; //그리두 후 수정
+  padding-inline: var(--card1-padding-inline);
+  padding-top: var(--card1-padding-top);
+  padding-bottom: var(--card1-padding-bottom);
+
   &--pic {
     max-width: 2.5rem;
+    height: 40px;
+    border: 1px solid #cbcbcd;
+    border-radius: 0.5rem;
+  }
+  &--sub-t {
+    color: var(--navigation-logo-text-color);
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: RobotoMono, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &--main-t {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
 .card6 {
-  background-color: darkgray; //그리두 후 수정
+  padding-inline: var(--card1-padding-inline);
+  padding-top: var(--card1-padding-top);
+  padding-bottom: var(--card1-padding-bottom);
+
   &--pic {
     max-width: 2.5rem;
+    height: 40px;
+    border: 1px solid #cbcbcd;
+    border-radius: 0.5rem;
+  }
+  &--sub-t {
+    color: var(--navigation-logo-text-color);
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: RobotoMono, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  &--main-t {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
 .title2 {
-  background-color: darkgray; //그리두 후 수정
+  background-color: #c7aaaa; //그리두 후 수정
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  align-items: center;
+
+  &--name {
+    font-weight: 1000;
+    line-height: 1.625rem;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+  }
+  &--view {
+    // align-items: center;
+    color: var(--navigation-logo-text-color);
+    font-family: RobotoMono, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
+    line-height: 2;
+    text-decoration: underline;
+  }
 }
 
 .subtitle2 {
-  background-color: #c7aaaa; //그리두 후 수정
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .card2-1 {
