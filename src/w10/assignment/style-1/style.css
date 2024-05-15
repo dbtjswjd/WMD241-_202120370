@@ -33,6 +33,8 @@ img {
 .container {
   height: auto;
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
 }
 
 ol {
@@ -538,6 +540,7 @@ h2 {
 
 .flex-grow {
   padding-bottom: 6rem;
+  margin-top: 6rem;
   background-color: var(--downbar-background-color);
 }
 
@@ -758,6 +761,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
+  flex-wrap: wrap;
 }
 
 .downbar__downside-pic {

@@ -42,6 +42,12 @@ img {
 .container {
   height: auto;
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
+  // gap: 10px;
+  // max-width: 100%;
+  // overflow-wrap: break-word;
+  // word-wrap: break-word;
 
   // justify-content: center; 가운데 정렬 시켜줄만한거 확인 필요
 }
@@ -500,6 +506,7 @@ h2 {
   display: grid;
   justify-content: center;
   gap: 2rem;
+  // grid-template-columns: 12.5rem repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .card2-1 {
@@ -590,10 +597,12 @@ h2 {
   justify-content: center;
   background-color: var(--downbar-background-color);
   margin-top: 6rem;
+  // flex-wrap: wrap;
 }
 
 .flex-grow {
   padding-bottom: 6rem;
+  margin-top: 6rem;
   background-color: var(--downbar-background-color);
 }
 
@@ -820,6 +829,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
+  flex-wrap: wrap;
 }
 
 .downbar__downside-pic {
