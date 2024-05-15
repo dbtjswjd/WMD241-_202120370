@@ -235,6 +235,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 }
 .card1--pic {
   max-width: 40px;
@@ -264,6 +266,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 }
 .card2--pic {
   max-width: 40px;
@@ -293,6 +297,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 }
 .card3--pic {
   max-width: 40px;
@@ -317,11 +323,13 @@ h2 {
 }
 
 .card4 {
-  grid-column: 3/1;
+  grid-column: 3;
   grid-row: 2;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 }
 .card4--pic {
   max-width: 40px;
@@ -351,6 +359,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 }
 .card5--pic {
   max-width: 40px;
@@ -380,6 +390,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 }
 .card6--pic {
   max-width: 40px;

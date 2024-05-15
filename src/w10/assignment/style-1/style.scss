@@ -273,6 +273,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
   // overflow: hidden;
 
   &--pic {
@@ -304,6 +306,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 
   &--pic {
     max-width: 40px;
@@ -334,6 +338,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 
   &--pic {
     max-width: 40px;
@@ -359,11 +365,13 @@ h2 {
 }
 
 .card4 {
-  grid-column: 3 / 1;
+  grid-column: 3;
   grid-row: 2;
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 
   &--pic {
     max-width: 40px;
@@ -394,6 +402,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 
   &--pic {
     max-width: 40px;
@@ -424,6 +434,8 @@ h2 {
   padding-inline: var(--card1-padding-inline);
   padding-top: var(--card1-padding-top);
   padding-bottom: var(--card1-padding-bottom);
+  border: 1.3px solid #e5e5e6;
+  border-radius: 0.5rem;
 
   &--pic {
     max-width: 40px;
