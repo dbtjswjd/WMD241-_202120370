@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vedio embeding</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script>
+      LottieInteractivity.create({
+        player: "#tenthLottie",
+        mode: "cursor",
+        actions: [
+          {
+            type: "click",
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+    <!-- <lottie-player
+      id="firstLottie"
+      src="https://assets2.lottiefiles.com/packages/lf20_i9mxcD.json"
+      style="width: 400px; height: 400px"
+      >"></lottie-player
+    > -->
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
@@ -43,7 +62,7 @@
         <iframe
           id="video2"
           class="yt-video"
-          src="https://www.youtube.com/embed/d_7pnpfAoGQ?si=VU0DNtdK5HkHNyVk"
+          src="../../step2/assets/lottie-downloaded.json"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
