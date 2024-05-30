@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  // background-color: aqua;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+//h6까지 있지만 보통 h4까지만 사용
+// 제목에 해당하는 text가 line - height가 높으면 보기에 안 좋을 수 있음
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 75rem;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+  background-color: oklch(0.9 0 0);
+}
+
+.yt-video {
+  margin-inline: auto;
+}
+
+#video1 {
+  aspect-ratio: 560 / 315;
+  width: 100%;
+}
+
+#video2 {
+  aspect-ratio: 560 / 315;
+  width: 100%;
+}
+
+img,
+iframe {
+  display: block;
+}
