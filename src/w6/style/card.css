@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap")
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap')
 body {
-  font-family: "Cute Font", sans-serif;
+  font-family: 'Cute Font', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -16,7 +16,7 @@ body {
 
 .card {
   max-width: 25rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
